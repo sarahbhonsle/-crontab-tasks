@@ -35,7 +35,7 @@ crontab -r
 
 # (Root Only) Edit or list cron jobs for a specific user (e.g., tom)
 sudo crontab -eu tom 
-sudo crontab -lu tom -l
+sudo crontab -lu tom 
 
 # Common Enterprise Schedule Examples :-
 Here are exact configuration lines you can paste inside a crontab -e session:
