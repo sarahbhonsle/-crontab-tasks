@@ -25,17 +25,17 @@ To create flexible schedules, cron utilizes four specialized characters:
 # Practical Lab Code & Configurations
        Essential Crontab Management Commands:
 1.Edit the current user's crontab file (opens in vi/nano)
-crontab -e
+crontab -eu <username>
 
 2.List all active cron jobs scheduled for the current user
-crontab -l
+crontab -lu <username>
 
 3.Remove/Delete all scheduled cron jobs for the current user safely
 crontab -r
 
 # (Root Only) Edit or list cron jobs for a specific user (e.g., tom)
-sudo crontab -u tom -e
-sudo crontab -u tom -l
+sudo crontab -eu tom 
+sudo crontab -lu tom -l
 
 # Common Enterprise Schedule Examples :-
 Here are exact configuration lines you can paste inside a crontab -e session:
