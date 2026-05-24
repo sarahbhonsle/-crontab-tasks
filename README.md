@@ -14,13 +14,13 @@ A standard cron expression consists of five fields followed by the command execu
 # Syntax Operators
 To create flexible schedules, cron utilizes four specialized characters:
 
-* (Asterisk): Matches every possible value in that field. (e.g., a * in the hour field means "every hour").
+ * (Asterisk): Matches every possible value in that field. (e.g., a * in the hour field means "every hour").
 
-, (Comma): Defines a list of discrete values. (e.g., 1,3,5 in the day of week field means "Monday, Wednesday, and Friday").
+ , (Comma): Defines a list of discrete values. (e.g., 1,3,5 in the day of week field means "Monday, Wednesday, and Friday").
 
-- (Hyphen): Defines a continuous range of values. (e.g., 9-17 in the hour field means "9 AM through 5 PM").
+ - (Hyphen): Defines a continuous range of values. (e.g., 9-17 in the hour field means "9 AM through 5 PM").
 
-/ (Slash): Specifies step increments. (e.g., */15 in the minute field means "every 15 minutes").
+ / (Slash): Specifies step increments. (e.g., */15 in the minute field means "every 15 minutes").
 
 # Practical Lab Code & Configurations
        Essential Crontab Management Commands:
