@@ -8,19 +8,9 @@ User Crontabs: Stored securely under /var/spool/cron/ and edited using the cront
 System-wide Crontabs: Located at /etc/crontab and inside the /etc/cron.d/ directory. These are managed exclusively by root and require specifying a target execution user.
 
 # The Cron Syntax Architecture
-A standard cron entry consists of two distinct parts: the time schedule expressions followed by the absolute path to the shell command or script.
-
-The schedule is always defined using exactly 5 fields, separated by spaces:
-
-.---------------- minute (0 - 59)
- |  .------------- hour (0 - 23)
- |  |  .---------- day of month (1 - 31)
- |  |  |  .------- month (1 - 12)
- |  |  |  |  .---- day of week (0 - 6) (Sunday to Saturday)
- |  |  |  |  |
- * * * * * /absolute/path/to/command
-
-
+A standard cron expression consists of five fields followed by the command execution string. Each field is separated by a single space or tab.
+   SHOWN IN IMAGE..
+    
 # Syntax Operators
 To create flexible schedules, cron utilizes four specialized characters:
 
